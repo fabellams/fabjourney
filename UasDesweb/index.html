@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella's</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section.fullscreen-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    section {
+      scroll-margin-top: 80px;
+    }
+
+    .navbar {
+  background-color: #f5f5dc; /* beige saat awal */
+  transition: background-color 0.3s ease;
+    }
+
+    .navbar.scrolled {
+  background-color: #44667f !important; /* biru saat discroll */
+    }
+
+    .navbar .nav-link {
+  color: #000 !important; /* hitam saat awal */
+    }
+
+    .navbar.scrolled .nav-link {
+  color: #fff !important; /* putih saat scroll */
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #44667f;">
+    <div class="container">
+      <img src="image/logo.png" alt="Logo" class="me-2" style="height: 45px;">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#daily">Daily</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="banner fullscreen-section">
+    <div class="container">
+      <div class="row h-100 align-items-center">
+        <div class="col-md-6 offset-md-6 text-end" data-aos="fade-left">
+          <h1>Fabella Meiliana</h1>
+          <p>Pendidikan Multimedia 2023</p>
+          <a href="#about" class="btn btn-primary">About Bella</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="fullscreen-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="image/about.jpeg" alt="About Us" class="img-fluid rounded about-image">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="mb-4">About Me</h2>
+          <p>Nama Saya Fabella Meiliana, lahir di Bandung tanggal 23 Mei 2005. Saya merupakan lulusan SMAN 23 Bandung.</p>
+          <p>Saat ini saya adalah mahasiswi Universitas Pendidikan Indonesia program studi Pendidikan Multimedia.</p>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-light fullscreen-section">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-card">
+            <img src="image/bukudigital.png" alt="Project 1" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Raka dan Rasa</h4>
+              <p>Buku Digital interaktif bergaya kartun yang mengangkat tema kuliner Nusantara melalui petualangan fantasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-item">
+            <img src="image/cahaya.jpeg" alt="Project 2" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Cahaya dari Elystra</h4>
+              <p>Animasi pendek fantasi yang mengisahkan perjalanan gadis bernama Lyn dalam mengembalikan harapan desanya.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="portfolio-item">
+            <img src="image/fotografi.JPG" alt="Project 3" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Minimalis Potrait</h4>
+              <p>Fotografi minimalis dengan fokus pada kesederhanaan elemen dan warna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily -->
+<section id="daily" class="fullscreen-section" style="padding: 60px 0;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-left">
+        <h2 class="mb-4">Bella's Daily</h2>
+        <p>
+          Selain menjalani perkuliahan, saya juga aktif dalam organisasi Himpunan Mahasiswa Pendidikan Multimedia. 
+          Keterlibatan ini memberi saya banyak pengalaman berharga, mulai dari bekerja dalam tim, mengelola program kerja, 
+          hingga berkomunikasi dengan berbagai pihak. Kegiatan organisasi ini juga membantu saya mengembangkan soft skill 
+          seperti kepemimpinan, manajemen waktu, dan kemampuan berpikir kreatif di luar konteks akademik.
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="image/daily.jpeg" alt="Daily" class="img-fluid rounded daily-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light fullscreen-section">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="contact-info">
+            <h4>Kontak Saya</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Antapani, Bandung, Jawa Barat</p>
+            <p><i class="fas fa-phone"></i> 081#####</p>
+            <p><i class="fas fa-envelope"></i> fabellameiliana@upi.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 FabellaJourney.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#home" class="text-light text-decoration-none">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        document.querySelector('.navbar').classList.add('scrolled');
+      } else {
+        document.querySelector('.navbar').classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
